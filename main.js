@@ -42,7 +42,9 @@ window.addEventListener('load', (event) => {
                 toReplace.style.fontFamily ="'Merriweather Sans', sans-serif"
                 toReplace.style.top ="30%"
             }
-            toReplace.innerText = first.value[0] + last.value[0]
+            let trimmedFirst = first.value.trim()
+            let trimmedLast = last.value.trim()
+            toReplace.innerText = trimmedFirst[0] + trimmedLast[0]
            printToFile(fitra)
         }else{
             if(!isFirstValid && isLastValid){
@@ -57,7 +59,7 @@ window.addEventListener('load', (event) => {
     })
 
     first.addEventListener('keyup',function(){
-        if(!this.value.length || !this.value.trim()  ){
+        if(!this.value.length || !this.value.trim()){
             errMsg1.style.display = "block"
             isFirstValid = false
         }else{
