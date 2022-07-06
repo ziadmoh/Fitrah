@@ -20,7 +20,7 @@ function downloadURI(uri, name) {
 function printToFile(div) {
     html2canvas(div).then(function(canvas) {
         var myImage = canvas.toDataURL("image/png");
-            downloadURI("data:" + myImage, first.value+"-" + last.value + "-" + "-supports-Fitrah.png");
+            downloadURI("data:" + myImage, first.value+"-" + last.value + "-supports-Fitrah.png");
     });
 
 }

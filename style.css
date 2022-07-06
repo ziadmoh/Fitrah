@@ -111,7 +111,7 @@ body{
 .replaceple{
     position: absolute;
     left: 50%;
-    Top: 35%;
+    Top: 30%;
     transform: translate(-50%, 0);
     font-size: 300px;
     letter-spacing: 1px;
