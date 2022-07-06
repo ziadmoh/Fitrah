@@ -43,7 +43,7 @@ window.addEventListener('load', (event) => {
                 toReplace.style.top ="30%"
             }
             toReplace.innerText = first.value[0] + last.value[0]
-           //printToFile(fitra)
+           printToFile(fitra)
         }else{
             if(!isFirstValid && isLastValid){
                 errMsg1.style.display = "block"
