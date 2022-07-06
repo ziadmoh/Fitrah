@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+body{
+    padding: 0;
+    margin:0;
+    direction:rtl
+}
+
+.container-el{
+    width:100vw;height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page-header{
+    font-family: 'Lemonada', cursive;
+    letter-spacing: 1px;
+    margin: 0px 15px;
+}
+.page-note{
+    font-family: 'El Messiri', sans-serif;
+    font-size:17px;
+    margin: 10px;
+}
+
+.names-from{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width :"490px") {
+    .names-from {
+        flex-direction: row;
+    }
+}
+.inp-group{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.form-input{
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+.form-input:focus,.submit-btn:focus{
+    outline: 0;
+}
+.err-msg{
+    margin: 5px;
+    color: red;
+    display: none;
+}
+.submit-btn:active{
+    outline: 0;
+}
+.submit-btn{
+    font-family: 'Lemonada', cursive;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 10px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.fitra{
+    width: 900px;
+    height: 900px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.fitra-container{
+    width: -moz-fit-content;
+    width: fit-content;
+    display: none;
+}
+
+.fitra-1{
+    width: 50%;
+    height: 100%;
+    background: #51C6E7;
+}
+.fitra-2{
+    width: 50%;
+    height: 100%;
+    background-color: #EE4995;
+}
+.replaceple{
+    position: absolute;
+    left: 50%;
+    Top: 35%;
+    transform: translate(-50%, 0);
+    font-size: 300px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+}
+.footer{
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    transform: translate(-50%, 0);
+    font-family: 'El Messiri', sans-serif;
+}

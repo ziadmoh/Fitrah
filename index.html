@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fitrah</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+        <div id="containerEl" class="container-el" 
+        >
+            <h2 class="page-header">هذه الصفحة لدعم حملة <strong>#فطرة</strong></h2>
+            <span class="page-note" >ادخل اسمك هنا وحمل اسمك على خلفية #فطرة</span>
+            <form class="names-from" id="namesForm"
+           >
+                <div class="inp-group">
+                    <input name="first" id="first" placeholder="الاسم الاول" class="form-input">
+                    <span id="err-msg1" class="err-msg"> من فضلك ادخل الاسم الاول </span>
+                </div>
+                <div class="inp-group">
+                    <input class="form-input" name="last" id="last" placeholder="الاسم الاخير" >
+                    <span id="err-msg2" class="err-msg"> من فضلك ادخل الاسم الاخير  </span>
+                </div>
+                <button class="submit-btn" type="submit" id="donwloadPhoto">تنزيل</button>
+            </form>
+        </div>
+        <div class="fitra-container" id="fitraCont">
+            <div class="fitra" id="fitra">
+                <div class="fitra-1"></div>
+                <div class="fitra-2"></div>
+                <div class="replaceple" id="toReplace">
+
+                </div>
+                <div class="footer">
+                    <span>
+                        يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا ۚ إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ ۚ إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ (13) </span>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
